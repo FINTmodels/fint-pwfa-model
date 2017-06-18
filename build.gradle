@@ -11,7 +11,7 @@ targetCompatibility = 1.8
 
 jar {
     baseName = 'fint-pwfa-model'
-    version = '0.0.2-SNAPSHOT'
+    version = '0.0.2'
 }
 
 repositories {
@@ -22,7 +22,7 @@ repositories {
     mavenCentral()
 }
 
-apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.8/dependencies.gradle'
+apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/dependencies.gradle'
 dependencies {
     compile('no.fint:fint-relation-model:0.0.22')
     compile('com.fasterxml.jackson.core:jackson-annotations:2.8.0')
@@ -34,5 +34,5 @@ task wrapper(type: Wrapper) {
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.8/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/bintray.gradle'
 }
