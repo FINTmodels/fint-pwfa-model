@@ -1,5 +1,6 @@
 plugins {
-    id "com.jfrog.bintray" version "1.7.3"
+    id 'com.jfrog.bintray' version '1.7.3'
+    id 'com.github.ben-manes.versions' version '0.15.0'
 }
 
 apply plugin: 'java'
@@ -11,7 +12,7 @@ targetCompatibility = 1.8
 
 jar {
     baseName = 'fint-pwfa-model'
-    version = '0.0.3-SNAPSHOT'
+    version = '0.0.3'
 }
 
 repositories {
@@ -24,7 +25,7 @@ repositories {
 
 apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/dependencies.gradle'
 dependencies {
-    compile('no.fint:fint-relation-model:0.0.22')
+    compile('no.fint:fint-relation-model:1.0.7')
     compile('com.fasterxml.jackson.core:jackson-annotations:2.8.0')
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 }
