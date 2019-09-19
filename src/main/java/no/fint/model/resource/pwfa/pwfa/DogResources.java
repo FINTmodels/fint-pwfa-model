@@ -1,4 +1,4 @@
-// Built from tag v0.1.0-alpha-2
+// Built from tag v0.1.0-alpha-3
 
 package no.fint.model.resource.pwfa.pwfa;
 
