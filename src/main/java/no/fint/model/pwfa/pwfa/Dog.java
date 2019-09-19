@@ -1,4 +1,4 @@
-// Built from tag v0.1.0-alpha-3
+// Built from tag v0.1.0-alpha-4
 
 package no.fint.model.pwfa.pwfa;
 
@@ -20,8 +20,7 @@ public class Dog implements FintMainObject {
             OWNER
     }
 
-    @NonNull
-    private List<String> breed;
+    private String breed;
     @NonNull
     private Identifikator id;
     @NonNull

@@ -1,4 +1,4 @@
-// Built from tag v0.1.0-alpha-3
+// Built from tag v0.1.0-alpha-4
 
 package no.fint.model.resource.pwfa.pwfa;
 
@@ -26,8 +26,7 @@ import no.fint.model.pwfa.pwfa.Identifikator;
 @ToString
 public class DogResource implements FintMainObject, FintLinks {
     // Attributes
-    @NonNull
-    private List<String> breed;
+    private String breed;
     @NonNull
     private Identifikator id;
     @NonNull
