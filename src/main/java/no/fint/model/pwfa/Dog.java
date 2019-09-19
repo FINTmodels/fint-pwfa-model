@@ -1,4 +1,4 @@
-package no.fint.pwfa.model;
+package no.fint.model.pwfa;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package no.fint.pwfa.model;
+package no.fint.model.pwfa;
 
 import java.util.Arrays;
 import java.util.List;

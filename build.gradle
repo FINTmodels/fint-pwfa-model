@@ -1,6 +1,6 @@
 plugins {
-    id 'com.jfrog.bintray' version '1.7.3'
-    id 'com.github.ben-manes.versions' version '0.15.0'
+    id 'com.jfrog.bintray' version '1.8.4'
+    id 'com.github.ben-manes.versions' version '0.25.0'
 }
 
 apply plugin: 'java'
@@ -10,11 +10,6 @@ apply plugin: 'maven'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-jar {
-    baseName = 'fint-pwfa-model'
-    version = '0.0.3'
-}
-
 repositories {
     maven {
         url "http://dl.bintray.com/fint/maven"
@@ -23,9 +18,11 @@ repositories {
     mavenCentral()
 }
 
-apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/dependencies.gradle'
+apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.7.0/dependencies.gradle'
 dependencies {
-    compile('no.fint:fint-relation-model:1.0.7')
+    compile('no.fint:fint-relation-model:1.1.5')
+    compile('no.fint:fint-model-core:0.1.0')
+    compile('no.fint:fint-model-resource:0.3.3')
     compile('com.fasterxml.jackson.core:jackson-annotations:2.8.0')
     compileOnly("org.projectlombok:lombok:${lombokVersion}")
 }
@@ -35,5 +32,5 @@ task wrapper(type: Wrapper) {
 }
 
 if (project.hasProperty('bintrayUser') && project.hasProperty('bintrayKey')) {
-    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.0.14/bintray.gradle'
+    apply from: 'https://raw.githubusercontent.com/FINTlibs/fint-buildscripts/v1.7.0/bintray.gradle'
 }
