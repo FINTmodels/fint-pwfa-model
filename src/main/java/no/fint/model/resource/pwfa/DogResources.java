@@ -1,6 +1,6 @@
 // Built from tag v0.1.1
 
-package no.fint.model.resource.pwfa.pwfa;
+package no.fint.model.resource.pwfa;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -12,16 +12,16 @@ import lombok.NoArgsConstructor;
 import no.fint.model.resource.AbstractCollectionResources;
 
 @NoArgsConstructor
-public class OwnerResources extends AbstractCollectionResources<OwnerResource> {
+public class DogResources extends AbstractCollectionResources<DogResource> {
 
-    public OwnerResources(Collection<OwnerResource> input) {
+    public DogResources(Collection<DogResource> input) {
         super(input);
     }
 
     @JsonIgnore
     @Deprecated
     @Override
-    public TypeReference<List<OwnerResource>> getTypeReference() {
-        return new TypeReference<List<OwnerResource>>() {};
+    public TypeReference<List<DogResource>> getTypeReference() {
+        return new TypeReference<List<DogResource>>() {};
     }
 }

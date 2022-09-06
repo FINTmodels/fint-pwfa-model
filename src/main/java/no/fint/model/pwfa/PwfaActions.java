@@ -1,6 +1,6 @@
 // Built from tag v0.1.1
 
-package no.fint.model.pwfa.pwfa;
+package no.fint.model.pwfa;
 
 import java.util.Arrays;
 import java.util.List;
