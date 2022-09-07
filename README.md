@@ -6,6 +6,9 @@ repositories {
         url  "https://repo.fintlabs.no/releases" 
     }
 }
+
+compile('no.fintlabs:fint-pwfa-resource-model-java:0.1.0')
+
 ```
 
 This is the model we're using in the Play-With-FINT-Adapter service. It containts of two models:
