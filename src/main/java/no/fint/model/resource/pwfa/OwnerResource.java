@@ -1,6 +1,6 @@
 // Built from tag v0.1.1
 
-package no.fint.model.resource.pwfa.pwfa;
+package no.fint.model.resource.pwfa;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -18,15 +18,14 @@ import java.util.Map;
 import no.fint.model.FintMainObject;
 import no.fint.model.resource.FintLinks;
 import no.fint.model.resource.Link;
-import no.fint.model.pwfa.pwfa.Identifikator;
+import no.fint.model.pwfa.Identifikator;
 
 @Data
 @NoArgsConstructor
 @EqualsAndHashCode
 @ToString
-public class DogResource implements FintMainObject, FintLinks {
+public class OwnerResource implements FintMainObject, FintLinks {
     // Attributes
-    private String breed;
     @NonNull
     private Identifikator id;
     @NonNull
@@ -37,10 +36,10 @@ public class DogResource implements FintMainObject, FintLinks {
     private final Map<String, List<Link>> links = createLinks();
         
     @JsonIgnore
-    public List<Link> getOwner() {
-        return getLinks().getOrDefault("owner", Collections.emptyList()); 
+    public List<Link> getDog() {
+        return getLinks().getOrDefault("dog", Collections.emptyList()); 
     }
-    public void addOwner(Link link) {
-        addLink("owner", link);
+    public void addDog(Link link) {
+        addLink("dog", link);
     }
 }

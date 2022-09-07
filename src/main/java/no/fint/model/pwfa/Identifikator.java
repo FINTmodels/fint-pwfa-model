@@ -1,6 +1,6 @@
 // Built from tag v0.1.1
 
-package no.fint.model.pwfa.pwfa;
+package no.fint.model.pwfa;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
