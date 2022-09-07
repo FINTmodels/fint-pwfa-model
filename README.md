@@ -7,7 +7,7 @@ repositories {
     }
 }
 
-compile('no.fintlabs:fint-pwfa-resource-model-java:0.1.0')
+compile('no.fintlabs:fint-pwfa-model:0.1.0')
 
 ```
 
@@ -16,6 +16,6 @@ This is the model we're using in the Play-With-FINT-Adapter service. It containt
 * Dog
 * Owner
 
-A dog can have an owners and and owner can have dogs.
+A dog can have an owners and an owner can have dogs.
 
 To Play-With-FINT-Adapter [see](https://fintprosjektet.github.io/adapter/)
