@@ -3,11 +3,9 @@
 ```groovy
 repositories {
     maven {
-        url  "http://dl.bintray.com/fint/maven" 
+        url  "https://repo.fintlabs.no/releases" 
     }
 }
-
-compile('no.fint:fint-pwfa-model:0.0.3')
 ```
 
 This is the model we're using in the Play-With-FINT-Adapter service. It containts of two models:
